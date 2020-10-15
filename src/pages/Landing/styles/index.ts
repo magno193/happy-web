@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100vw;
@@ -59,7 +60,7 @@ export const Location = styled.div`
   }
 `;
 
-export const EnterApp = styled.a`
+export const EnterApp = styled(Link)`
   position: absolute;
   right: 0;
   bottom: 0;
@@ -72,7 +73,7 @@ export const EnterApp = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-
+ 
   transition: background-color 0.2s;
   &:hover {
     background: #96feff;

@@ -1,16 +1,15 @@
 import React from 'react';
-import Landing from './pages/Landing';
+import Routes from './routes';
 
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Landing />
-
+    <>
+      <Routes />
       <GlobalStyle />
-    </div>
+    </>
   );
-} 
+}
 
 export default App;
